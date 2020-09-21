@@ -1,0 +1,56 @@
+#contact{
+	padding: 40px;
+	background-color: #171819;
+}
+#my_nanogallery2{
+	padding:40px;
+}
+
+.headera{
+display: flex;
+    justify-content:center;
+	flex-direction:column;
+	h2{
+	width: 60vw;
+    /* margin-right: 20px; */
+    margin: 30px;
+    color: white;
+    font-size: 43px;
+  font-family: 'Roboto', sans-serif;
+	}
+	a{
+	width:50vw;
+	 margin: 30px;
+	 text-align:center;
+	}
+}
+
+.logoinfo{
+	display:flex;
+	p{
+	margin-left:10px;
+	color:white !important;
+	}
+	margin-top:80px;
+}
+.logoheaders{
+	font-weight:bold;
+	font-size:18px;
+}
+
+@media(max-width:768px){
+	.headera {
+	    background-position: bottom !important;
+	    justify-content:start;
+	h2{
+	width: 86vw;
+    /* margin-right: 20px; */
+    font-weight: bold;
+    margin: 23px;
+    margin-top: 90px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+	}
+	}
+}

@@ -1,0 +1,20 @@
+<div class="space-header"></div>
+<%= form_for @blog, url: createblog_path do |f| %>
+
+ <div class="form-group">
+<%=f.text_field :title,class:'form-control',type:"text",placeholder:"Title"%><br>
+  </div>
+<div class="form-group">
+<%=f.text_field :metakey,class:'form-control',type:"text",placeholder:"Meta Keywords seperate by comma (,)"%><br>
+  </div>
+  <div class="form-group">
+<%=f.text_field :metadesc,class:'form-control',type:"text",placeholder:"Meta Description"%><br>
+  </div>
+<div class="form-group">
+  <%= f.file_field :avatar %>
+  </div>
+<div class="form-group">
+    <%= f.rich_text_area :content %>
+  </div>
+   <%=f.submit "Save Blog", class: 'btn btn-info'%>
+<% end %>

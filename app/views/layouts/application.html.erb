@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ashish</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Aashish K Jha</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.2/css/nanogallery2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
+<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+  </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="95" id="top">
+      <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand logo" href="index.html"><span class="logo_text">Aashish K Jha</span></a>
+                        <div class="demo_menu ml-auto" id="demo_menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#videos">Videos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#bl">Blog</a>
+                                </li>
+                               <li class="nav-item">
+                                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact Us</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <%= yield %>
+    
+   <script type="text/javascript">
+ $(document).on('turbolinks:load',function(){
+            
+              
+  var url= window.location.href;
+  if (url.match("home/index") || (/3000.$/.test(url))) {
+
+  }
+else{
+  $('header').css('background-color','black');
+}});
+</script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.2/jquery.nanogallery2.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script type="text/javascript"> 
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1000,3],
+        itemsDesktopSmall:[990,2],
+        itemsTablet:[767,1],
+        pagination:true,
+        navigation:false,
+        autoPlay:true
+    });
+});
+</script>
+   <script>
+       jQuery(function() {
+    ParallaxScroll.init();
+});
+
+var ParallaxScroll = {
+    /* PUBLIC VARIABLES */
+    showLogs: false,
+    round: 1000,
+
+    /* PUBLIC FUNCTIONS */
+    init: function() {
+        this._log("init");
+        if (this._inited) {
+            this._log("Already Inited");
+            this._inited = true;
+            return;
+        }
+        this._requestAnimationFrame = (function(){
+            return  window.requestAnimationFrame       ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame    ||
+                window.oRequestAnimationFrame      ||
+                window.msRequestAnimationFrame     ||
+                function(/* function */ callback, /* DOMElement */ element){
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+        this._onScroll(true);
+    },
+
+    /* PRIVATE VARIABLES */
+    _inited: false,
+    _properties: ['x', 'y', 'z', 'rotateX', 'rotateY', 'rotateZ', 'scaleX', 'scaleY', 'scaleZ', 'scale'],
+    _requestAnimationFrame:null,
+
+    /* PRIVATE FUNCTIONS */
+    _log: function(message) {
+        if (this.showLogs) console.log("Parallax Scroll / " + message);
+    },
+    _onScroll: function(noSmooth) {
+        var scroll = jQuery(document).scrollTop();
+        var windowHeight = jQuery(window).height();
+        this._log("onScroll " + scroll);
+        jQuery("[data-parallax]").each(jQuery.proxy(function(index, el) {
+            var jQueryel = jQuery(el);
+            var properties = [];
+            var applyProperties = false;
+            var style = jQueryel.data("style");
+            if (style == undefined) {
+                style = jQueryel.attr("style") || "";
+                jQueryel.data("style", style);
+            }
+            var datas = [jQueryel.data("parallax")];
+            var iData;
+            for(iData = 2; ; iData++) {
+                if(jQueryel.data("parallax"+iData)) {
+                    datas.push(jQueryel.data("parallax-"+iData));
+                }
+                else {
+                    break;
+                }
+            }
+            var datasLength = datas.length;
+            for(iData = 0; iData < datasLength; iData ++) {
+                var data = datas[iData];
+                var scrollFrom = data["from-scroll"];
+                if (scrollFrom == undefined) scrollFrom = Math.max(0, jQuery(el).offset().top - windowHeight);
+                scrollFrom = scrollFrom | 0;
+                var scrollDistance = data["distance"];
+                var scrollTo = data["to-scroll"];
+                if (scrollDistance == undefined && scrollTo == undefined) scrollDistance = windowHeight;
+                scrollDistance = Math.max(scrollDistance | 0, 1);
+                var easing = data["easing"];
+                var easingReturn = data["easing-return"];
+                if (easing == undefined || !jQuery.easing|| !jQuery.easing[easing]) easing = null;
+                if (easingReturn == undefined || !jQuery.easing|| !jQuery.easing[easingReturn]) easingReturn = easing;
+                if (easing) {
+                    var totalTime = data["duration"];
+                    if (totalTime == undefined) totalTime = scrollDistance;
+                    totalTime = Math.max(totalTime | 0, 1);
+                    var totalTimeReturn = data["duration-return"];
+                    if (totalTimeReturn == undefined) totalTimeReturn = totalTime;
+                    scrollDistance = 1;
+                    var currentTime = jQueryel.data("current-time");
+                    if(currentTime == undefined) currentTime = 0;
+                }
+                if (scrollTo == undefined) scrollTo = scrollFrom + scrollDistance;
+                scrollTo = scrollTo | 0;
+                var smoothness = data["smoothness"];
+                if (smoothness == undefined) smoothness = 30;
+                smoothness = smoothness | 0;
+                if (noSmooth || smoothness == 0) smoothness = 1;
+                smoothness = smoothness | 0;
+                var scrollCurrent = scroll;
+                scrollCurrent = Math.max(scrollCurrent, scrollFrom);
+                scrollCurrent = Math.min(scrollCurrent, scrollTo);
+                if(easing) {
+                    if(jQueryel.data("sens") == undefined) jQueryel.data("sens", "back");
+                    if(scrollCurrent>scrollFrom) {
+                        if(jQueryel.data("sens") == "back") {
+                            currentTime = 1;
+                            jQueryel.data("sens", "go");
+                        }
+                        else {
+                            currentTime++;
+                        }
+                    }
+                    if(scrollCurrent<scrollTo) {
+                        if(jQueryel.data("sens") == "go") {
+                            currentTime = 1;
+                            jQueryel.data("sens", "back");
+                        }
+                        else {
+                            currentTime++;
+                        }
+                    }
+                    if(noSmooth) currentTime = totalTime;
+                    jQueryel.data("current-time", currentTime);
+                }
+                this._properties.map(jQuery.proxy(function(prop) {
+                    var defaultProp = 0;
+                    var to = data[prop];
+                    if (to == undefined) return;
+                    if(prop=="scale" || prop=="scaleX" || prop=="scaleY" || prop=="scaleZ" ) {
+                        defaultProp = 1;
+                    }
+                    else {
+                        to = to | 0;
+                    }
+                    var prev = jQueryel.data("_" + prop);
+                    if (prev == undefined) prev = defaultProp;
+                    var next = ((to-defaultProp) * ((scrollCurrent - scrollFrom) / (scrollTo - scrollFrom))) + defaultProp;
+                    var val = prev + (next - prev) / smoothness;
+                    if(easing && currentTime>0 && currentTime<=totalTime) {
+                        var from = defaultProp;
+                        if(jQueryel.data("sens") == "back") {
+                            from = to;
+                            to = -to;
+                            easing = easingReturn;
+                            totalTime = totalTimeReturn;
+                        }
+                        val = jQuery.easing[easing](null, currentTime, from, to, totalTime);
+                    }
+                    val = Math.ceil(val * this.round) / this.round;
+                    if(val==prev&&next==to) val = to;
+                    if(!properties[prop]) properties[prop] = 0;
+                    properties[prop] += val;
+                    if (prev != properties[prop]) {
+                        jQueryel.data("_" + prop, properties[prop]);
+                        applyProperties = true;
+                    }
+                }, this));
+            }
+            if (applyProperties) {
+                if (properties["z"] != undefined) {
+                    var perspective = data["perspective"];
+                    if (perspective == undefined) perspective = 800;
+                    var jQueryparent = jQueryel.parent();
+                    if(!jQueryparent.data("style")) jQueryparent.data("style", jQueryparent.attr("style") || "");
+                    jQueryparent.attr("style", "perspective:" + perspective + "px; -webkit-perspective:" + perspective + "px; "+ jQueryparent.data("style"));
+                }
+                if(properties["scaleX"] == undefined) properties["scaleX"] = 1;
+                if(properties["scaleY"] == undefined) properties["scaleY"] = 1;
+                if(properties["scaleZ"] == undefined) properties["scaleZ"] = 1;
+                if (properties["scale"] != undefined) {
+                    properties["scaleX"] *= properties["scale"];
+                    properties["scaleY"] *= properties["scale"];
+                    properties["scaleZ"] *= properties["scale"];
+                }
+                var translate3d = "translate3d(" + (properties["x"] ? properties["x"] : 0) + "px, " + (properties["y"] ? properties["y"] : 0) + "px, " + (properties["z"] ? properties["z"] : 0) + "px)";
+                var rotate3d = "rotateX(" + (properties["rotateX"] ? properties["rotateX"] : 0) + "deg) rotateY(" + (properties["rotateY"] ? properties["rotateY"] : 0) + "deg) rotateZ(" + (properties["rotateZ"] ? properties["rotateZ"] : 0) + "deg)";
+                var scale3d = "scaleX(" + properties["scaleX"] + ") scaleY(" + properties["scaleY"] + ") scaleZ(" + properties["scaleZ"] + ")";
+                var cssTransform = translate3d + " " + rotate3d + " " + scale3d + ";";
+                this._log(cssTransform);
+                jQueryel.attr("style", "transform:" + cssTransform + " -webkit-transform:" + cssTransform + " " + style);
+            }
+        }, this));
+        if(window.requestAnimationFrame) {
+            window.requestAnimationFrame(jQuery.proxy(this._onScroll, this, false));
+        }
+        else {
+            this._requestAnimationFrame(jQuery.proxy(this._onScroll, this, false));
+        }
+    }
+};
+   </script>
+   <script type="text/javascript">
+       ! function (e) {
+    "use strict";
+
+
+    function menuFixed() {
+        let scTop = $(window).scrollTop();
+        if (scTop > 0) {
+            $('.header').addClass('menu_fixed');
+        } else {
+            $('.header').removeClass('menu_fixed');
+        }
+    }
+    menuFixed();
+    $(window).scroll(function () {
+        menuFixed();
+    });
+
+    function scrollSmoothTop() {
+        $('.btn_group a[href^="#"], .header a[href^="#"], .go_to_top a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            console.log(target);
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 90
+                }, 1500);
+            }
+        });
+    }
+    scrollSmoothTop();
+
+    function topScroll() {
+        var $scTop = $(window).scrollTop();
+        var $opcn = 1 - $scTop / 700;
+        $(".hero_warp").css("opacity", $opcn);
+        if ($opcn < 0) {
+            $(".hero_warp").addClass('hide');
+        } else {
+            $(".hero_warp").removeClass('hide');
+        }
+        if ($scTop < 120) {
+            $('.go_to_top').hide(300);
+        } else {
+            $('.go_to_top').show(300);
+        }
+    }
+    topScroll();
+    $(window).on('scroll', function () {
+        topScroll();
+    });
+
+    function wowInit() {
+        new WOW().init();
+    }
+    wowInit();
+
+
+}(jQuery);
+   </script>
+  </body>
+</html>

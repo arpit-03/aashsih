@@ -1,0 +1,109 @@
+<div class="space-header"></div>
+
+<div class="container-fluid bg">
+	<div class="container">
+	    <div class="row">
+		<div class="col-md-8 ">
+		    <div class="row">
+		        <div class="col-sm-3 col-md-2 col-lg-2">
+		            <i class="lni lni-enter" aria-hidden="true"></i>
+		        </div>
+		        
+		        <div class="col-sm-9 col-md-10 col-lg-10">
+		            <h1 class="heading">Register</h1>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		        </div>
+		    </div>
+		    
+		     <div class="row">
+		        <div class="col-sm-3 col-md-2 col-lg-2">
+		            <i class="lni lni-user" aria-hidden="true"></i>
+		        </div>
+		        
+		        <div class="col-sm-9 col-md-10 col-lg-10">
+		            <h1 class="heading">Make Your Profile</h1>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		        </div>
+		    </div>
+		    
+		      <div class="row">
+		        <div class="col-sm-3 col-md-2 col-lg-2 ">
+		            <i class="lni lni-credit-cards"></i>
+		        </div>
+		        
+		        <div class="col-sm-9 col-md-10 col-lg-10">
+		            <h1 class="heading">Do the payment</h1>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		        </div>
+		    </div>
+		    
+		    <div class="row">
+		        <div class="col-sm-3 col-md-2 col-lg-2">
+		            <i class="lni lni-target-revenue" aria-hidden="true"></i>
+		        </div>
+		        
+		        <div class="col-sm-9 col-md-10 col-lg-10">
+		            <h1 class="heading">Complete 7 step process</h1>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="col-md-4">
+		        <div class="card regform wow bounce animated" data-wow-delay="0.05s">
+		            <div class="card-body regform">
+		               <div class="myform form ">
+                        <div class="logo mb-3">
+                           <div class="col-md-12 text-center">
+                              <h1 class="sign">Signup</h1>
+                           </div>
+                        </div>
+                        <form action="#" name="registration">
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Name</label>
+                              <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname" required>
+                           </div>
+                          
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password" required>
+                           </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Mobile Number</label>
+                              <input type="number" minlength="10" maxlength="10" name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Mobile Number" required>
+                           </div>
+                           <div class="col-md-12 text-center mb-3">
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Sign Up</button>
+                           </div>
+                           <div class="col-md-12 ">
+                              <div class="form-group">
+                                 <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                              </div>
+                           </div>
+                            </div>
+		            </div>
+		        </div>
+		    </div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).on('turbolinks:load', function(){
+	$("#signup").click(function() {
+$("#first").fadeOut("fast", function() {
+$("#second").fadeIn("fast");
+});
+});
+
+$("#signin").click(function() {
+$("#second").fadeOut("fast", function() {
+$("#first").fadeIn("fast");
+});
+});
+
+
+</script>

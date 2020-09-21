@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  password: MyString
+  phoneno: 1
+  gender: MyString
+  verified: false
+  payment: false
+  payment_id: MyString
+  level: 1
+  through_r_code: false
+  scores: MyString
+
+two:
+  name: MyString
+  email: MyString
+  password: MyString
+  phoneno: 1
+  gender: MyString
+  verified: false
+  payment: false
+  payment_id: MyString
+  level: 1
+  through_r_code: false
+  scores: MyString
