@@ -1,4 +1,6 @@
 <div class="space-header"></div>
+<div style="padding: 40px">
+	<h5  style="font-weight: bold">Create a New Blog</h5>
 <%= form_for @blog, url: createblog_path do |f| %>
 
  <div class="form-group">
@@ -18,3 +20,4 @@
   </div>
    <%=f.submit "Save Blog", class: 'btn btn-info'%>
 <% end %>
+</div>

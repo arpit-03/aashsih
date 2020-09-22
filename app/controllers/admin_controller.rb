@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-
+before_action :authorize_admin , except:[:login,:login2]
 def index
 end
 def login
@@ -23,4 +23,30 @@ blog=Blog.create(title: params[:blog][:title], metakey: params[:blog][:metakey],
 blog.avatar.attach(params[:blog][:avatar])
 redirect_to adminindex_path
 end
+
+def viewlead
+@lead=Lead.all.order('id desc')
+end
+def viewfullleadinfo
+@info= Lead.find(params[:id])
+end
+def viewallblog
+@blog=Blog.all
+end
+def deleteblog
+	end
+	def deleteblog2
+		Blog.find(params[:id]).delete
+		redirect_to adminindex_path
+	end
+
+	def authorize_admin
+if(!session[:admin_id])
+  redirect_to adminlogin_path
+end
+  end
+  def logout
+  session.delete(:admin_id)
+  redirect_to root_path
+  end
 end

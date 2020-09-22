@@ -6,8 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,8 +26,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
 <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
 
@@ -46,9 +45,11 @@
             <div class="row">
                 <div class="col-lg-12 col-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand logo" href="index.html"><span class="logo_text">Aashish K Jha</span></a>
+                        <a class="navbar-brand logo" href="/"><span class="logo_text">Aashish K Jha</span></a>
                         <div class="demo_menu ml-auto" id="demo_menu">
                             <ul class="navbar-nav">
+                                <%if !session[:admin_id]%>
+                                <%if @home%>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
@@ -64,7 +65,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact Us</a>
                                 </li>
-                               
+                                <%else%>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Go back To Home Page</a>
+                                </li>
+                                <%end%>
+                               <%else%>
+                                     <li class="nav-item" style="color:white;font-weight: bold;">
+                                    Super User
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="/admin/logout">Sign Out</a>
+                                </li>
+                               <%end%>
                             </ul>
                         </div>
                     </nav>
@@ -81,7 +94,7 @@
         </div>
     </footer>
    <script type="text/javascript">
- $(document).on('turbolinks:load',function(){
+ $(document).ready(function(){
             
               
   var url= window.location.href;
@@ -360,6 +373,11 @@ var ParallaxScroll = {
 
 
 }(jQuery);
+   </script>
+   <script>
+       $(document).ready(function(){
+        console.log(window.location.href);
+       })
    </script>
   </body>
 </html>

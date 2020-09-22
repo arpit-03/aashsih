@@ -1,0 +1,14 @@
+
+
+ <div class="space-header"></div>
+ <%=form_tag deleteblog2_path ,method: 'post' do %>
+ <div class="form-group" style="padding: 50px; min-height: 80vh">
+                <div class='input-group date' style="margin-bottom: 40px">
+               <%=number_field_tag :id,"",class:'form-control', placeholder: "Enter Blog id to Delete"%>
+                    
+                </div>
+            
+  <%=submit_tag "Delete Blog", class: 'btn btn-info'%>
+<%end%>
+</div>
+</div>

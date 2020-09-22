@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<script type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<div class="space-header"></div>
+<div style="margin:40px; min-height: 80vh">
+	<h5 style="text-align: center;font-weight: bold">All Lead Information</h5>
+<table id="myTable" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+            	
+            	<th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+        		<%@lead.each do |l|%>
+        	<tr>
+        		
+        		<td><p><%=l.id%></p></td>
+        		<td><a href="/admin/viewfullleadinfo/<%=l.id%>"><p><%=l.name%></p></a></td>
+        		<td><a href="/admin/viewfullleadinfo/<%=l.id%>"><p><%=l.email%></p></a></td>
+        		<td><a href="/admin/viewfullleadinfo/<%=l.id%>"><p><%=l.mobile%></p></a></td>
+        	
+        	</tr>
+        	<%end%>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#myTable').DataTable();
+
+} );
+</script>
