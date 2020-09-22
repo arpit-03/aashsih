@@ -27,6 +27,9 @@ display: flex;
 
 .logoinfo{
 	display:flex;
+	img{
+	width:25%;
+	}
 	p{
 	margin-left:10px;
 	color:white !important;
@@ -52,5 +55,20 @@ display: flex;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 	}
+	}
+	.logoinfo{
+	flex-direction:column;
+	img{
+	width:100%;
+	}
+	}
+}
+footer{
+	div{
+	    display: flex;
+    height: 10vh;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1f20;
 	}
 }
