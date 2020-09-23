@@ -10,7 +10,7 @@
 
 server '35.154.65.210', user: 'ubuntu', roles: %w{app db web}
 set :ssh_options, {
-   keys: %w(/home/arpit/Downloads/Ashish.pem),
+   keys: %w(/home/arpit/Downloads/Aashish.pem),
    forward_agent: false,
  }
 
