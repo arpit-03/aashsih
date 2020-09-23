@@ -135,7 +135,7 @@ He is currently Leading a 3000+ Affiliates Organization of the No. 1 Direct Sell
             </div>
 <div id="owl-demo">
           <%@blog.each do |f|%>
-  <div class="item"><a href="/blog/index/<%=f.id%>"><img src="<%=url_for(f.avatar)%>" alt="Blog Image"></a></div>
+  <div class="item"><a href="/blog/index/<%=f.id%>" title="<%=f.title%>"><img src="<%=url_for(f.avatar)%>" alt="Blog Image"></a></div>
 <%end%>
  
 </div>
