@@ -49,4 +49,12 @@ end
   session.delete(:admin_id)
   redirect_to root_path
   end
+  
+  def updateblog
+  @blog= Blog.find(params[:id])
+  end
+  def updateblog2
+Blog.find(params[:id]).update(title: params[:blog][:title], content: params[:blog]['content'])
+  redirect_to adminindex_path
+  end
 end

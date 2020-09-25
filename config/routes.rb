@@ -22,6 +22,8 @@ get 'admin/viewfullleadinfo/:id' , to: 'admin#viewfullleadinfo', as:'fullleadinf
 get 'admin/viewallblog'
 get 'admin/deleteblog'
 get 'admin/logout'
+get 'admin/updateblog/:id' ,to: 'admin#updateblog',as: 'update'
+patch 'admin/updateblog2/:id', to: 'admin#updateblog2',as: 'update2'
 post 'admin/deleteblog2' , to: 'admin#deleteblog2', as:'deleteblog2'
 post 'admin/login2', to: 'admin#login2', as: 'admin'
 post 'admin/createblog', to: 'admin#createblog', as:'createblog'
