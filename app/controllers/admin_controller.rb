@@ -57,4 +57,7 @@ end
 Blog.find(params[:id]).update(title: params[:blog][:title], content: params[:blog]['content'])
   redirect_to adminindex_path
   end
+  def viewupdateblog
+@blog= Blog.all
+  end
 end

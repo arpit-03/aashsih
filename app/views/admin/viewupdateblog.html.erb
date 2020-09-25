@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<script type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<div class="space-header"></div>
+<div style="margin:40px; min-height: 80vh">
+	<h5 style="text-align: center;font-weight: bold">All Blogs</h5>
+<table id="myTable3" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+            	
+            	<th>Id</th>
+                <th>Title</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+        		<%@blog.each do |b|%>
+        	<tr>
+        		
+        		<td><p><%=b.id%></p></td>
+        		<td><a href="/admin/updateblog/<%=b.id%>"><p><%=b.title%></p></a></td>
+        	
+        	
+        	</tr>
+        	<%end%>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#myTable3').DataTable();
+
+} );
+</script>
